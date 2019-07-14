@@ -23,7 +23,7 @@ namespace State
         public override void TurnOn()
         {
             Console.WriteLine("You broke it!!!");
-            this.ctx.State = new IAmBroken();
+            this.ctx.State = new IAmBroken(this.ctx);
         }
 
         public override void Fix()
