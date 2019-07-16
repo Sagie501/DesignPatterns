@@ -34,6 +34,7 @@ namespace Composite
 
             root.Draw("");
             Console.WriteLine("Number of leaf is: " + root.CountLeaf());
+            Console.WriteLine(root.IsBinary() ? "This component is binary tree" : "This component isn't binary tree");
         }
     }
 }
