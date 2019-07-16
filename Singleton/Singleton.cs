@@ -6,12 +6,6 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns_20190714
 {
-    /// <summary>
-    /// This is the class made for the singleton design pattern. I made this for fun. 
-    /// <para>
-    /// Toaster is the nickname for a loading animation. 
-    /// </para>
-    /// </summary>
     class Singleton
     {
         private static Singleton instance;
