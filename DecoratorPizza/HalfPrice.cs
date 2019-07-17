@@ -19,7 +19,7 @@ namespace Decorator
 
         public override double GetPrice()
         {
-            return this.pizza.GetPrice() + 0.5;
+            return this.pizza.GetPrice() * 0.5;
         }
     }
 }
