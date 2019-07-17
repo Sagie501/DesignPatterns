@@ -10,7 +10,11 @@ namespace DecoratorFormula
     {
         static void Main(string[] args)
         {
-            IFormula formula = new Add(new Mul(new Sub(new Div(new Add(new Mul(new StartNumber(5), 2), 100), 12), 3), 4), 7);
+            StartNumber startNumber = new StartNumber(5);
+            IFormula formula = new Add(new Mul(new Sub(new Div(new Add(new Mul(startNumber, 2), 100), 12), 3), 4), 7);
+            Console.WriteLine(formula.GetFormula() + " = " + formula.GetResult());
+            startNumber.SetNumber(30);
+            IFormula newFormula = new Add(new Mul(new Sub(new Div(new Add(new Mul(startNumber, 2), 100), 12), 3), 4), 7);
             Console.WriteLine(formula.GetFormula() + " = " + formula.GetResult());
         }
     }
